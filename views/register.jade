@@ -1,0 +1,31 @@
+extends layout
+
+block content 
+	p(class='registration-error-message')= message
+	form(action='register', method='POST')
+		span Email:
+		br 
+		input(type='text', name='email')
+		br
+		br
+		span Password: 
+		br
+		input(type='text', name='password')
+		br
+		br
+		span Confirm password: 
+		br
+		input(type='text', name='confirmPassword')
+		br
+		br
+		span First Name: 
+		br
+		input(type='text', name='firstName')
+		br
+		br
+		span Last Name: 
+		br
+		input(type='text', name='lastName')
+		br
+		br
+		input(type='submit')
