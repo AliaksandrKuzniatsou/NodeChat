@@ -2,3 +2,8 @@ extends layout
 
 block content 
 	p This is your chat page
+	a(href='/') Back to home
+	span /
+	a(href='/users/logout') Logout
+	script(src="/socket.io/socket.io.js")
+	script(src="/js/socketTest.js")

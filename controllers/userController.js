@@ -56,6 +56,11 @@ userController.isAuthorized = function(req, res, next) {
         res.redirect('/users/login');
         
     } 
-}
+};
+
+userController.logout = function(req, res, next) {
+    res.clearCookie('session');
+    res.redirect('/');
+};
 
 module.exports = userController;

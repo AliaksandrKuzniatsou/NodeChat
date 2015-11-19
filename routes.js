@@ -12,6 +12,7 @@ router.get('/users/login', userController.renderLogin);
 router.post('/users/login', userController.login);
 router.get('/users/register', userController.renderRegister);
 router.post('/users/register', userController.register);
+router.get('/users/logout', userController.logout);
 
 router.get('/chat', userController.isAuthorized, chatController.renderChat);
 
