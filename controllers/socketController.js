@@ -21,6 +21,11 @@ function setEvents(io) {
 	        }); 	
 			
 		});
+		
+		socket.on('message', function(msg) {
+			
+		});
+		
 	});
 	
 }

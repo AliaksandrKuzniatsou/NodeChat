@@ -5,7 +5,6 @@ var gulp  = require('gulp');
 var gutil = require('gulp-util');
 var nodemon = require('gulp-nodemon');
 
-// create a default task and just log a message
 gulp.task('default', function() {
   
 });
